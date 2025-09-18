@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ku1250YxzpU=",
+  "success": true,
+  "projectFilePath": "D:\\code\\RevReady\\ZEN\\dotnet\\RevReady.Tests\\RevReady.Tests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ramre\\.nuget\\packages\\fscheck\\3.1.0\\fscheck.3.1.0.nupkg.sha512",
+    "C:\\Users\\ramre\\.nuget\\packages\\fscheck.xunit\\3.1.0\\fscheck.xunit.3.1.0.nupkg.sha512",
+    "C:\\Users\\ramre\\.nuget\\packages\\fsharp.core\\5.0.2\\fsharp.core.5.0.2.nupkg.sha512",
+    "C:\\Users\\ramre\\.nuget\\packages\\xunit\\2.9.0\\xunit.2.9.0.nupkg.sha512",
+    "C:\\Users\\ramre\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\ramre\\.nuget\\packages\\xunit.analyzers\\1.15.0\\xunit.analyzers.1.15.0.nupkg.sha512",
+    "C:\\Users\\ramre\\.nuget\\packages\\xunit.assert\\2.9.0\\xunit.assert.2.9.0.nupkg.sha512",
+    "C:\\Users\\ramre\\.nuget\\packages\\xunit.core\\2.9.0\\xunit.core.2.9.0.nupkg.sha512",
+    "C:\\Users\\ramre\\.nuget\\packages\\xunit.extensibility.core\\2.9.0\\xunit.extensibility.core.2.9.0.nupkg.sha512",
+    "C:\\Users\\ramre\\.nuget\\packages\\xunit.extensibility.execution\\2.9.0\\xunit.extensibility.execution.2.9.0.nupkg.sha512",
+    "C:\\Users\\ramre\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.2\\xunit.runner.visualstudio.2.8.2.nupkg.sha512"
+  ],
+  "logs": []
+}

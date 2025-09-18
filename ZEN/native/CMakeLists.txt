@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(revready_core CXX)
+set(CMAKE_CXX_STANDARD 17)
+add_library(revready SHARED revready.cpp)
+target_include_directories(revready PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../abi)

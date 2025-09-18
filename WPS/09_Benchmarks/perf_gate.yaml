@@ -1,0 +1,5 @@
+throughput_mib_s_p95_min: 300
+interop_overhead_cpu_pct_max: 5
+compression_ratio_median_min: 2.5
+rto_seconds_max: 300
+proof_verify_seconds_p95_max: 120
