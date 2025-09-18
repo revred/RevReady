@@ -1,0 +1,1207 @@
+diff --git a/WPS/README.md b/WPS/README.md
+new file mode 100644
+index 0000000..e69de29
+--- /dev/null
++++ b/WPS/README.md
+@@ 0,0 @@
++# Work Packages (Flat)
++
++This folder replaces the earlier nested WPS structure with a **single flat list** of 12 files:
++
++- WP01: Project Structure & Tooling Sanity (Flatten WPS, README refresh)
++- WP02: Product Strategy (Edge vs Competitors)
++- WP03: Competition & Positioning (Pure Storage & Peers)
++- WP04: Commercials: Pricing, Packaging, Cash-Flow Model
++- WP05: Core API & C# SDK (Minimal Demo Path)
++- WP06: C ABI & C SDK (Stable Interop Contracts)
++- WP07: C++ SDK & Bindings (High-Perf Clients)
++- WP08: Data Model, Schemas, Migrations
++- WP09: Security, Compliance & SPI Readiness
++- WP10: Performance Benchmarks, SLOs & Tuning
++- WP11: V&V Test Automation & CI Gates
++- WP12: Demo Prep, Docs & GTM Ready
++
++## Ground Rules
++- One file per WP: `WPxx_Title.md`
++- Keep sections consistent across WPs (template included in each file)
++- Update **Status**, **Priority**, and **Milestones** as you progress
++- Link code artefacts under `ZEN/` and docs under `Strategy/`, `Competition/`, `Commercials/`
++
++_Last updated: 2025-09-18_
+
+
+diff --git a/WPS/WP01_Project_Structure_&_Tooling_Sanity_(Flatten_WPS,_README_refresh).md b/WPS/WP01_Project_Structure_&_Tooling_Sanity_(Flatten_WPS,_README_refresh).md
+new file mode 100644
+index 0000000..e69de29
+--- /dev/null
++++ b/WPS/WP01_Project_Structure_&_Tooling_Sanity_(Flatten_WPS,_README_refresh).md
+@@ 0,0 @@
++# WP01: Project Structure & Tooling Sanity (Flatten WPS, README refresh)
++
++**Owner:** Ram (CTO)  
++**Date:** 2025-09-18  
++**Status:** Draft → In Review → Approved  
++**Priority:** P0  
++**Related Repos/Dirs:** `WPS/`, `ZEN/`, `Strategy/`, `Competition/`, `Commercials/`
++
++## 1. Objective
++Brief, outcome-focused statement.
++
++## 2. Scope
++- In scope:
++- Out of scope:
++
++## 3. Deliverables
++- [ ] Artefacts (code, docs, schemas, diagrams)
++- [ ] Demos
++- [ ] Tests (unit, integration, perf)
++- [ ] Benchmarks & SLO report
++
++## 4. Success & Exit Criteria
++- Functional
++- Non-functional (SLOs, security, compliance)
++- Acceptance tests
++
++## 5. Architecture & Design
++- Components
++- Interfaces (C#, C ABI, C++)
++- Data flows
++- Diagrams (PlantUML/Mermaid)
++
++## 6. API & Schemas
++- Endpoints / Functions
++- JSON Schemas / Protobuf
++- Versioning & Compatibility
++
++## 7. Data Model
++- Entities & relationships
++- Migrations
++- Retention, backups, disaster recovery
++
++## 8. Security & Compliance
++- AuthN/AuthZ
++- Secrets, key management
++- SPI/FCA implications (where relevant)
++- PII handling & audit
++
++## 9. Performance & Capacity
++- SLOs (latency, throughput, error rate)
++- Benchmarks plan
++- Capacity model & cost envelope
++
++## 10. V&V (Verification & Validation)
++- Test matrix
++- Test data
++- CI gates
++
++## 11. Ops & DevEx
++- Build/CI
++- Release strategy
++- Observability (logs, metrics, traces)
++- Runbooks
++
++## 12. Timeline & Milestones
++- M1:
++- M2:
++- Code freeze & demo
++
++## 13. Risks & Mitigations
++- R1:
++- R2:
++
++## 14. Dependencies
++- Internal:
++- External (ThetaData, Stripe, etc.)
++
++## 15. Checklists
++**Definition of Ready**
++- [ ] Story mapped
++- [ ] Interfaces frozen
++- [ ] Test data available
++
++**Definition of Done**
++- [ ] All acceptance tests green
++- [ ] Docs updated
++- [ ] Demo recorded
++
++## 16. Change Log
++- 2025-09-18: Initial draft created.
+
+
+diff --git a/WPS/WP02_Product_Strategy_(Edge_vs_Competitors).md b/WPS/WP02_Product_Strategy_(Edge_vs_Competitors).md
+new file mode 100644
+index 0000000..e69de29
+--- /dev/null
++++ b/WPS/WP02_Product_Strategy_(Edge_vs_Competitors).md
+@@ 0,0 @@
++# WP02: Product Strategy (Edge vs Competitors)
++
++**Owner:** Ram (CTO)  
++**Date:** 2025-09-18  
++**Status:** Draft → In Review → Approved  
++**Priority:** P0  
++**Related Repos/Dirs:** `WPS/`, `ZEN/`, `Strategy/`, `Competition/`, `Commercials/`
++
++## 1. Objective
++Brief, outcome-focused statement.
++
++## 2. Scope
++- In scope:
++- Out of scope:
++
++## 3. Deliverables
++- [ ] Artefacts (code, docs, schemas, diagrams)
++- [ ] Demos
++- [ ] Tests (unit, integration, perf)
++- [ ] Benchmarks & SLO report
++
++## 4. Success & Exit Criteria
++- Functional
++- Non-functional (SLOs, security, compliance)
++- Acceptance tests
++
++## 5. Architecture & Design
++- Components
++- Interfaces (C#, C ABI, C++)
++- Data flows
++- Diagrams (PlantUML/Mermaid)
++
++## 6. API & Schemas
++- Endpoints / Functions
++- JSON Schemas / Protobuf
++- Versioning & Compatibility
++
++## 7. Data Model
++- Entities & relationships
++- Migrations
++- Retention, backups, disaster recovery
++
++## 8. Security & Compliance
++- AuthN/AuthZ
++- Secrets, key management
++- SPI/FCA implications (where relevant)
++- PII handling & audit
++
++## 9. Performance & Capacity
++- SLOs (latency, throughput, error rate)
++- Benchmarks plan
++- Capacity model & cost envelope
++
++## 10. V&V (Verification & Validation)
++- Test matrix
++- Test data
++- CI gates
++
++## 11. Ops & DevEx
++- Build/CI
++- Release strategy
++- Observability (logs, metrics, traces)
++- Runbooks
++
++## 12. Timeline & Milestones
++- M1:
++- M2:
++- Code freeze & demo
++
++## 13. Risks & Mitigations
++- R1:
++- R2:
++
++## 14. Dependencies
++- Internal:
++- External (ThetaData, Stripe, etc.)
++
++## 15. Checklists
++**Definition of Ready**
++- [ ] Story mapped
++- [ ] Interfaces frozen
++- [ ] Test data available
++
++**Definition of Done**
++- [ ] All acceptance tests green
++- [ ] Docs updated
++- [ ] Demo recorded
++
++## 16. Change Log
++- 2025-09-18: Initial draft created.
+
+
+diff --git a/WPS/WP03_Competition_&_Positioning_(Pure_Storage_&_Peers).md b/WPS/WP03_Competition_&_Positioning_(Pure_Storage_&_Peers).md
+new file mode 100644
+index 0000000..e69de29
+--- /dev/null
++++ b/WPS/WP03_Competition_&_Positioning_(Pure_Storage_&_Peers).md
+@@ 0,0 @@
++# WP03: Competition & Positioning (Pure Storage & Peers)
++
++**Owner:** Ram (CTO)  
++**Date:** 2025-09-18  
++**Status:** Draft → In Review → Approved  
++**Priority:** P0  
++**Related Repos/Dirs:** `WPS/`, `ZEN/`, `Strategy/`, `Competition/`, `Commercials/`
++
++## 1. Objective
++Brief, outcome-focused statement.
++
++## 2. Scope
++- In scope:
++- Out of scope:
++
++## 3. Deliverables
++- [ ] Artefacts (code, docs, schemas, diagrams)
++- [ ] Demos
++- [ ] Tests (unit, integration, perf)
++- [ ] Benchmarks & SLO report
++
++## 4. Success & Exit Criteria
++- Functional
++- Non-functional (SLOs, security, compliance)
++- Acceptance tests
++
++## 5. Architecture & Design
++- Components
++- Interfaces (C#, C ABI, C++)
++- Data flows
++- Diagrams (PlantUML/Mermaid)
++
++## 6. API & Schemas
++- Endpoints / Functions
++- JSON Schemas / Protobuf
++- Versioning & Compatibility
++
++## 7. Data Model
++- Entities & relationships
++- Migrations
++- Retention, backups, disaster recovery
++
++## 8. Security & Compliance
++- AuthN/AuthZ
++- Secrets, key management
++- SPI/FCA implications (where relevant)
++- PII handling & audit
++
++## 9. Performance & Capacity
++- SLOs (latency, throughput, error rate)
++- Benchmarks plan
++- Capacity model & cost envelope
++
++## 10. V&V (Verification & Validation)
++- Test matrix
++- Test data
++- CI gates
++
++## 11. Ops & DevEx
++- Build/CI
++- Release strategy
++- Observability (logs, metrics, traces)
++- Runbooks
++
++## 12. Timeline & Milestones
++- M1:
++- M2:
++- Code freeze & demo
++
++## 13. Risks & Mitigations
++- R1:
++- R2:
++
++## 14. Dependencies
++- Internal:
++- External (ThetaData, Stripe, etc.)
++
++## 15. Checklists
++**Definition of Ready**
++- [ ] Story mapped
++- [ ] Interfaces frozen
++- [ ] Test data available
++
++**Definition of Done**
++- [ ] All acceptance tests green
++- [ ] Docs updated
++- [ ] Demo recorded
++
++## 16. Change Log
++- 2025-09-18: Initial draft created.
+
+
+diff --git a/WPS/WP04_Commercials:_Pricing,_Packaging,_Cash-Flow_Model.md b/WPS/WP04_Commercials:_Pricing,_Packaging,_Cash-Flow_Model.md
+new file mode 100644
+index 0000000..e69de29
+--- /dev/null
++++ b/WPS/WP04_Commercials:_Pricing,_Packaging,_Cash-Flow_Model.md
+@@ 0,0 @@
++# WP04: Commercials: Pricing, Packaging, Cash-Flow Model
++
++**Owner:** Ram (CTO)  
++**Date:** 2025-09-18  
++**Status:** Draft → In Review → Approved  
++**Priority:** P0  
++**Related Repos/Dirs:** `WPS/`, `ZEN/`, `Strategy/`, `Competition/`, `Commercials/`
++
++## 1. Objective
++Brief, outcome-focused statement.
++
++## 2. Scope
++- In scope:
++- Out of scope:
++
++## 3. Deliverables
++- [ ] Artefacts (code, docs, schemas, diagrams)
++- [ ] Demos
++- [ ] Tests (unit, integration, perf)
++- [ ] Benchmarks & SLO report
++
++## 4. Success & Exit Criteria
++- Functional
++- Non-functional (SLOs, security, compliance)
++- Acceptance tests
++
++## 5. Architecture & Design
++- Components
++- Interfaces (C#, C ABI, C++)
++- Data flows
++- Diagrams (PlantUML/Mermaid)
++
++## 6. API & Schemas
++- Endpoints / Functions
++- JSON Schemas / Protobuf
++- Versioning & Compatibility
++
++## 7. Data Model
++- Entities & relationships
++- Migrations
++- Retention, backups, disaster recovery
++
++## 8. Security & Compliance
++- AuthN/AuthZ
++- Secrets, key management
++- SPI/FCA implications (where relevant)
++- PII handling & audit
++
++## 9. Performance & Capacity
++- SLOs (latency, throughput, error rate)
++- Benchmarks plan
++- Capacity model & cost envelope
++
++## 10. V&V (Verification & Validation)
++- Test matrix
++- Test data
++- CI gates
++
++## 11. Ops & DevEx
++- Build/CI
++- Release strategy
++- Observability (logs, metrics, traces)
++- Runbooks
++
++## 12. Timeline & Milestones
++- M1:
++- M2:
++- Code freeze & demo
++
++## 13. Risks & Mitigations
++- R1:
++- R2:
++
++## 14. Dependencies
++- Internal:
++- External (ThetaData, Stripe, etc.)
++
++## 15. Checklists
++**Definition of Ready**
++- [ ] Story mapped
++- [ ] Interfaces frozen
++- [ ] Test data available
++
++**Definition of Done**
++- [ ] All acceptance tests green
++- [ ] Docs updated
++- [ ] Demo recorded
++
++## 16. Change Log
++- 2025-09-18: Initial draft created.
+
+
+diff --git a/WPS/WP05_Core_API_&_C#_SDK_(Minimal_Demo_Path).md b/WPS/WP05_Core_API_&_C#_SDK_(Minimal_Demo_Path).md
+new file mode 100644
+index 0000000..e69de29
+--- /dev/null
++++ b/WPS/WP05_Core_API_&_C#_SDK_(Minimal_Demo_Path).md
+@@ 0,0 @@
++# WP05: Core API & C# SDK (Minimal Demo Path)
++
++**Owner:** Ram (CTO)  
++**Date:** 2025-09-18  
++**Status:** Draft → In Review → Approved  
++**Priority:** P0  
++**Related Repos/Dirs:** `WPS/`, `ZEN/`, `Strategy/`, `Competition/`, `Commercials/`
++
++## 1. Objective
++Brief, outcome-focused statement.
++
++## 2. Scope
++- In scope:
++- Out of scope:
++
++## 3. Deliverables
++- [ ] Artefacts (code, docs, schemas, diagrams)
++- [ ] Demos
++- [ ] Tests (unit, integration, perf)
++- [ ] Benchmarks & SLO report
++
++## 4. Success & Exit Criteria
++- Functional
++- Non-functional (SLOs, security, compliance)
++- Acceptance tests
++
++## 5. Architecture & Design
++- Components
++- Interfaces (C#, C ABI, C++)
++- Data flows
++- Diagrams (PlantUML/Mermaid)
++
++## 6. API & Schemas
++- Endpoints / Functions
++- JSON Schemas / Protobuf
++- Versioning & Compatibility
++
++## 7. Data Model
++- Entities & relationships
++- Migrations
++- Retention, backups, disaster recovery
++
++## 8. Security & Compliance
++- AuthN/AuthZ
++- Secrets, key management
++- SPI/FCA implications (where relevant)
++- PII handling & audit
++
++## 9. Performance & Capacity
++- SLOs (latency, throughput, error rate)
++- Benchmarks plan
++- Capacity model & cost envelope
++
++## 10. V&V (Verification & Validation)
++- Test matrix
++- Test data
++- CI gates
++
++## 11. Ops & DevEx
++- Build/CI
++- Release strategy
++- Observability (logs, metrics, traces)
++- Runbooks
++
++## 12. Timeline & Milestones
++- M1:
++- M2:
++- Code freeze & demo
++
++## 13. Risks & Mitigations
++- R1:
++- R2:
++
++## 14. Dependencies
++- Internal:
++- External (ThetaData, Stripe, etc.)
++
++## 15. Checklists
++**Definition of Ready**
++- [ ] Story mapped
++- [ ] Interfaces frozen
++- [ ] Test data available
++
++**Definition of Done**
++- [ ] All acceptance tests green
++- [ ] Docs updated
++- [ ] Demo recorded
++
++## 16. Change Log
++- 2025-09-18: Initial draft created.
+
+
+diff --git a/WPS/WP06_C_ABI_&_C_SDK_(Stable_Interop_Contracts).md b/WPS/WP06_C_ABI_&_C_SDK_(Stable_Interop_Contracts).md
+new file mode 100644
+index 0000000..e69de29
+--- /dev/null
++++ b/WPS/WP06_C_ABI_&_C_SDK_(Stable_Interop_Contracts).md
+@@ 0,0 @@
++# WP06: C ABI & C SDK (Stable Interop Contracts)
++
++**Owner:** Ram (CTO)  
++**Date:** 2025-09-18  
++**Status:** Draft → In Review → Approved  
++**Priority:** P1  
++**Related Repos/Dirs:** `WPS/`, `ZEN/`, `Strategy/`, `Competition/`, `Commercials/`
++
++## 1. Objective
++Brief, outcome-focused statement.
++
++## 2. Scope
++- In scope:
++- Out of scope:
++
++## 3. Deliverables
++- [ ] Artefacts (code, docs, schemas, diagrams)
++- [ ] Demos
++- [ ] Tests (unit, integration, perf)
++- [ ] Benchmarks & SLO report
++
++## 4. Success & Exit Criteria
++- Functional
++- Non-functional (SLOs, security, compliance)
++- Acceptance tests
++
++## 5. Architecture & Design
++- Components
++- Interfaces (C#, C ABI, C++)
++- Data flows
++- Diagrams (PlantUML/Mermaid)
++
++## 6. API & Schemas
++- Endpoints / Functions
++- JSON Schemas / Protobuf
++- Versioning & Compatibility
++
++## 7. Data Model
++- Entities & relationships
++- Migrations
++- Retention, backups, disaster recovery
++
++## 8. Security & Compliance
++- AuthN/AuthZ
++- Secrets, key management
++- SPI/FCA implications (where relevant)
++- PII handling & audit
++
++## 9. Performance & Capacity
++- SLOs (latency, throughput, error rate)
++- Benchmarks plan
++- Capacity model & cost envelope
++
++## 10. V&V (Verification & Validation)
++- Test matrix
++- Test data
++- CI gates
++
++## 11. Ops & DevEx
++- Build/CI
++- Release strategy
++- Observability (logs, metrics, traces)
++- Runbooks
++
++## 12. Timeline & Milestones
++- M1:
++- M2:
++- Code freeze & demo
++
++## 13. Risks & Mitigations
++- R1:
++- R2:
++
++## 14. Dependencies
++- Internal:
++- External (ThetaData, Stripe, etc.)
++
++## 15. Checklists
++**Definition of Ready**
++- [ ] Story mapped
++- [ ] Interfaces frozen
++- [ ] Test data available
++
++**Definition of Done**
++- [ ] All acceptance tests green
++- [ ] Docs updated
++- [ ] Demo recorded
++
++## 16. Change Log
++- 2025-09-18: Initial draft created.
+
+
+diff --git a/WPS/WP07_C++_SDK_&_Bindings_(High-Perf_Clients).md b/WPS/WP07_C++_SDK_&_Bindings_(High-Perf_Clients).md
+new file mode 100644
+index 0000000..e69de29
+--- /dev/null
++++ b/WPS/WP07_C++_SDK_&_Bindings_(High-Perf_Clients).md
+@@ 0,0 @@
++# WP07: C++ SDK & Bindings (High-Perf Clients)
++
++**Owner:** Ram (CTO)  
++**Date:** 2025-09-18  
++**Status:** Draft → In Review → Approved  
++**Priority:** P1  
++**Related Repos/Dirs:** `WPS/`, `ZEN/`, `Strategy/`, `Competition/`, `Commercials/`
++
++## 1. Objective
++Brief, outcome-focused statement.
++
++## 2. Scope
++- In scope:
++- Out of scope:
++
++## 3. Deliverables
++- [ ] Artefacts (code, docs, schemas, diagrams)
++- [ ] Demos
++- [ ] Tests (unit, integration, perf)
++- [ ] Benchmarks & SLO report
++
++## 4. Success & Exit Criteria
++- Functional
++- Non-functional (SLOs, security, compliance)
++- Acceptance tests
++
++## 5. Architecture & Design
++- Components
++- Interfaces (C#, C ABI, C++)
++- Data flows
++- Diagrams (PlantUML/Mermaid)
++
++## 6. API & Schemas
++- Endpoints / Functions
++- JSON Schemas / Protobuf
++- Versioning & Compatibility
++
++## 7. Data Model
++- Entities & relationships
++- Migrations
++- Retention, backups, disaster recovery
++
++## 8. Security & Compliance
++- AuthN/AuthZ
++- Secrets, key management
++- SPI/FCA implications (where relevant)
++- PII handling & audit
++
++## 9. Performance & Capacity
++- SLOs (latency, throughput, error rate)
++- Benchmarks plan
++- Capacity model & cost envelope
++
++## 10. V&V (Verification & Validation)
++- Test matrix
++- Test data
++- CI gates
++
++## 11. Ops & DevEx
++- Build/CI
++- Release strategy
++- Observability (logs, metrics, traces)
++- Runbooks
++
++## 12. Timeline & Milestones
++- M1:
++- M2:
++- Code freeze & demo
++
++## 13. Risks & Mitigations
++- R1:
++- R2:
++
++## 14. Dependencies
++- Internal:
++- External (ThetaData, Stripe, etc.)
++
++## 15. Checklists
++**Definition of Ready**
++- [ ] Story mapped
++- [ ] Interfaces frozen
++- [ ] Test data available
++
++**Definition of Done**
++- [ ] All acceptance tests green
++- [ ] Docs updated
++- [ ] Demo recorded
++
++## 16. Change Log
++- 2025-09-18: Initial draft created.
+
+
+diff --git a/WPS/WP08_Data_Model,_Schemas,_Migrations.md b/WPS/WP08_Data_Model,_Schemas,_Migrations.md
+new file mode 100644
+index 0000000..e69de29
+--- /dev/null
++++ b/WPS/WP08_Data_Model,_Schemas,_Migrations.md
+@@ 0,0 @@
++# WP08: Data Model, Schemas, Migrations
++
++**Owner:** Ram (CTO)  
++**Date:** 2025-09-18  
++**Status:** Draft → In Review → Approved  
++**Priority:** P0  
++**Related Repos/Dirs:** `WPS/`, `ZEN/`, `Strategy/`, `Competition/`, `Commercials/`
++
++## 1. Objective
++Brief, outcome-focused statement.
++
++## 2. Scope
++- In scope:
++- Out of scope:
++
++## 3. Deliverables
++- [ ] Artefacts (code, docs, schemas, diagrams)
++- [ ] Demos
++- [ ] Tests (unit, integration, perf)
++- [ ] Benchmarks & SLO report
++
++## 4. Success & Exit Criteria
++- Functional
++- Non-functional (SLOs, security, compliance)
++- Acceptance tests
++
++## 5. Architecture & Design
++- Components
++- Interfaces (C#, C ABI, C++)
++- Data flows
++- Diagrams (PlantUML/Mermaid)
++
++## 6. API & Schemas
++- Endpoints / Functions
++- JSON Schemas / Protobuf
++- Versioning & Compatibility
++
++## 7. Data Model
++- Entities & relationships
++- Migrations
++- Retention, backups, disaster recovery
++
++## 8. Security & Compliance
++- AuthN/AuthZ
++- Secrets, key management
++- SPI/FCA implications (where relevant)
++- PII handling & audit
++
++## 9. Performance & Capacity
++- SLOs (latency, throughput, error rate)
++- Benchmarks plan
++- Capacity model & cost envelope
++
++## 10. V&V (Verification & Validation)
++- Test matrix
++- Test data
++- CI gates
++
++## 11. Ops & DevEx
++- Build/CI
++- Release strategy
++- Observability (logs, metrics, traces)
++- Runbooks
++
++## 12. Timeline & Milestones
++- M1:
++- M2:
++- Code freeze & demo
++
++## 13. Risks & Mitigations
++- R1:
++- R2:
++
++## 14. Dependencies
++- Internal:
++- External (ThetaData, Stripe, etc.)
++
++## 15. Checklists
++**Definition of Ready**
++- [ ] Story mapped
++- [ ] Interfaces frozen
++- [ ] Test data available
++
++**Definition of Done**
++- [ ] All acceptance tests green
++- [ ] Docs updated
++- [ ] Demo recorded
++
++## 16. Change Log
++- 2025-09-18: Initial draft created.
+
+
+diff --git a/WPS/WP09_Security,_Compliance_&_SPI_Readiness.md b/WPS/WP09_Security,_Compliance_&_SPI_Readiness.md
+new file mode 100644
+index 0000000..e69de29
+--- /dev/null
++++ b/WPS/WP09_Security,_Compliance_&_SPI_Readiness.md
+@@ 0,0 @@
++# WP09: Security, Compliance & SPI Readiness
++
++**Owner:** Ram (CTO)  
++**Date:** 2025-09-18  
++**Status:** Draft → In Review → Approved  
++**Priority:** P0  
++**Related Repos/Dirs:** `WPS/`, `ZEN/`, `Strategy/`, `Competition/`, `Commercials/`
++
++## 1. Objective
++Brief, outcome-focused statement.
++
++## 2. Scope
++- In scope:
++- Out of scope:
++
++## 3. Deliverables
++- [ ] Artefacts (code, docs, schemas, diagrams)
++- [ ] Demos
++- [ ] Tests (unit, integration, perf)
++- [ ] Benchmarks & SLO report
++
++## 4. Success & Exit Criteria
++- Functional
++- Non-functional (SLOs, security, compliance)
++- Acceptance tests
++
++## 5. Architecture & Design
++- Components
++- Interfaces (C#, C ABI, C++)
++- Data flows
++- Diagrams (PlantUML/Mermaid)
++
++## 6. API & Schemas
++- Endpoints / Functions
++- JSON Schemas / Protobuf
++- Versioning & Compatibility
++
++## 7. Data Model
++- Entities & relationships
++- Migrations
++- Retention, backups, disaster recovery
++
++## 8. Security & Compliance
++- AuthN/AuthZ
++- Secrets, key management
++- SPI/FCA implications (where relevant)
++- PII handling & audit
++
++## 9. Performance & Capacity
++- SLOs (latency, throughput, error rate)
++- Benchmarks plan
++- Capacity model & cost envelope
++
++## 10. V&V (Verification & Validation)
++- Test matrix
++- Test data
++- CI gates
++
++## 11. Ops & DevEx
++- Build/CI
++- Release strategy
++- Observability (logs, metrics, traces)
++- Runbooks
++
++## 12. Timeline & Milestones
++- M1:
++- M2:
++- Code freeze & demo
++
++## 13. Risks & Mitigations
++- R1:
++- R2:
++
++## 14. Dependencies
++- Internal:
++- External (ThetaData, Stripe, etc.)
++
++## 15. Checklists
++**Definition of Ready**
++- [ ] Story mapped
++- [ ] Interfaces frozen
++- [ ] Test data available
++
++**Definition of Done**
++- [ ] All acceptance tests green
++- [ ] Docs updated
++- [ ] Demo recorded
++
++## 16. Change Log
++- 2025-09-18: Initial draft created.
+
+
+diff --git a/WPS/WP10_Performance_Benchmarks,_SLOs_&_Tuning.md b/WPS/WP10_Performance_Benchmarks,_SLOs_&_Tuning.md
+new file mode 100644
+index 0000000..e69de29
+--- /dev/null
++++ b/WPS/WP10_Performance_Benchmarks,_SLOs_&_Tuning.md
+@@ 0,0 @@
++# WP10: Performance Benchmarks, SLOs & Tuning
++
++**Owner:** Ram (CTO)  
++**Date:** 2025-09-18  
++**Status:** Draft → In Review → Approved  
++**Priority:** P1  
++**Related Repos/Dirs:** `WPS/`, `ZEN/`, `Strategy/`, `Competition/`, `Commercials/`
++
++## 1. Objective
++Brief, outcome-focused statement.
++
++## 2. Scope
++- In scope:
++- Out of scope:
++
++## 3. Deliverables
++- [ ] Artefacts (code, docs, schemas, diagrams)
++- [ ] Demos
++- [ ] Tests (unit, integration, perf)
++- [ ] Benchmarks & SLO report
++
++## 4. Success & Exit Criteria
++- Functional
++- Non-functional (SLOs, security, compliance)
++- Acceptance tests
++
++## 5. Architecture & Design
++- Components
++- Interfaces (C#, C ABI, C++)
++- Data flows
++- Diagrams (PlantUML/Mermaid)
++
++## 6. API & Schemas
++- Endpoints / Functions
++- JSON Schemas / Protobuf
++- Versioning & Compatibility
++
++## 7. Data Model
++- Entities & relationships
++- Migrations
++- Retention, backups, disaster recovery
++
++## 8. Security & Compliance
++- AuthN/AuthZ
++- Secrets, key management
++- SPI/FCA implications (where relevant)
++- PII handling & audit
++
++## 9. Performance & Capacity
++- SLOs (latency, throughput, error rate)
++- Benchmarks plan
++- Capacity model & cost envelope
++
++## 10. V&V (Verification & Validation)
++- Test matrix
++- Test data
++- CI gates
++
++## 11. Ops & DevEx
++- Build/CI
++- Release strategy
++- Observability (logs, metrics, traces)
++- Runbooks
++
++## 12. Timeline & Milestones
++- M1:
++- M2:
++- Code freeze & demo
++
++## 13. Risks & Mitigations
++- R1:
++- R2:
++
++## 14. Dependencies
++- Internal:
++- External (ThetaData, Stripe, etc.)
++
++## 15. Checklists
++**Definition of Ready**
++- [ ] Story mapped
++- [ ] Interfaces frozen
++- [ ] Test data available
++
++**Definition of Done**
++- [ ] All acceptance tests green
++- [ ] Docs updated
++- [ ] Demo recorded
++
++## 16. Change Log
++- 2025-09-18: Initial draft created.
+
+
+diff --git a/WPS/WP11_V&V_Test_Automation_&_CI_Gates.md b/WPS/WP11_V&V_Test_Automation_&_CI_Gates.md
+new file mode 100644
+index 0000000..e69de29
+--- /dev/null
++++ b/WPS/WP11_V&V_Test_Automation_&_CI_Gates.md
+@@ 0,0 @@
++# WP11: V&V Test Automation & CI Gates
++
++**Owner:** Ram (CTO)  
++**Date:** 2025-09-18  
++**Status:** Draft → In Review → Approved  
++**Priority:** P0  
++**Related Repos/Dirs:** `WPS/`, `ZEN/`, `Strategy/`, `Competition/`, `Commercials/`
++
++## 1. Objective
++Brief, outcome-focused statement.
++
++## 2. Scope
++- In scope:
++- Out of scope:
++
++## 3. Deliverables
++- [ ] Artefacts (code, docs, schemas, diagrams)
++- [ ] Demos
++- [ ] Tests (unit, integration, perf)
++- [ ] Benchmarks & SLO report
++
++## 4. Success & Exit Criteria
++- Functional
++- Non-functional (SLOs, security, compliance)
++- Acceptance tests
++
++## 5. Architecture & Design
++- Components
++- Interfaces (C#, C ABI, C++)
++- Data flows
++- Diagrams (PlantUML/Mermaid)
++
++## 6. API & Schemas
++- Endpoints / Functions
++- JSON Schemas / Protobuf
++- Versioning & Compatibility
++
++## 7. Data Model
++- Entities & relationships
++- Migrations
++- Retention, backups, disaster recovery
++
++## 8. Security & Compliance
++- AuthN/AuthZ
++- Secrets, key management
++- SPI/FCA implications (where relevant)
++- PII handling & audit
++
++## 9. Performance & Capacity
++- SLOs (latency, throughput, error rate)
++- Benchmarks plan
++- Capacity model & cost envelope
++
++## 10. V&V (Verification & Validation)
++- Test matrix
++- Test data
++- CI gates
++
++## 11. Ops & DevEx
++- Build/CI
++- Release strategy
++- Observability (logs, metrics, traces)
++- Runbooks
++
++## 12. Timeline & Milestones
++- M1:
++- M2:
++- Code freeze & demo
++
++## 13. Risks & Mitigations
++- R1:
++- R2:
++
++## 14. Dependencies
++- Internal:
++- External (ThetaData, Stripe, etc.)
++
++## 15. Checklists
++**Definition of Ready**
++- [ ] Story mapped
++- [ ] Interfaces frozen
++- [ ] Test data available
++
++**Definition of Done**
++- [ ] All acceptance tests green
++- [ ] Docs updated
++- [ ] Demo recorded
++
++## 16. Change Log
++- 2025-09-18: Initial draft created.
+
+
+diff --git a/WPS/WP12_Demo_Prep,_Docs_&_GTM_Ready.md b/WPS/WP12_Demo_Prep,_Docs_&_GTM_Ready.md
+new file mode 100644
+index 0000000..e69de29
+--- /dev/null
++++ b/WPS/WP12_Demo_Prep,_Docs_&_GTM_Ready.md
+@@ 0,0 @@
++# WP12: Demo Prep, Docs & GTM Ready
++
++**Owner:** Ram (CTO)  
++**Date:** 2025-09-18  
++**Status:** Draft → In Review → Approved  
++**Priority:** P0  
++**Related Repos/Dirs:** `WPS/`, `ZEN/`, `Strategy/`, `Competition/`, `Commercials/`
++
++## 1. Objective
++Brief, outcome-focused statement.
++
++## 2. Scope
++- In scope:
++- Out of scope:
++
++## 3. Deliverables
++- [ ] Artefacts (code, docs, schemas, diagrams)
++- [ ] Demos
++- [ ] Tests (unit, integration, perf)
++- [ ] Benchmarks & SLO report
++
++## 4. Success & Exit Criteria
++- Functional
++- Non-functional (SLOs, security, compliance)
++- Acceptance tests
++
++## 5. Architecture & Design
++- Components
++- Interfaces (C#, C ABI, C++)
++- Data flows
++- Diagrams (PlantUML/Mermaid)
++
++## 6. API & Schemas
++- Endpoints / Functions
++- JSON Schemas / Protobuf
++- Versioning & Compatibility
++
++## 7. Data Model
++- Entities & relationships
++- Migrations
++- Retention, backups, disaster recovery
++
++## 8. Security & Compliance
++- AuthN/AuthZ
++- Secrets, key management
++- SPI/FCA implications (where relevant)
++- PII handling & audit
++
++## 9. Performance & Capacity
++- SLOs (latency, throughput, error rate)
++- Benchmarks plan
++- Capacity model & cost envelope
++
++## 10. V&V (Verification & Validation)
++- Test matrix
++- Test data
++- CI gates
++
++## 11. Ops & DevEx
++- Build/CI
++- Release strategy
++- Observability (logs, metrics, traces)
++- Runbooks
++
++## 12. Timeline & Milestones
++- M1:
++- M2:
++- Code freeze & demo
++
++## 13. Risks & Mitigations
++- R1:
++- R2:
++
++## 14. Dependencies
++- Internal:
++- External (ThetaData, Stripe, etc.)
++
++## 15. Checklists
++**Definition of Ready**
++- [ ] Story mapped
++- [ ] Interfaces frozen
++- [ ] Test data available
++
++**Definition of Done**
++- [ ] All acceptance tests green
++- [ ] Docs updated
++- [ ] Demo recorded
++
++## 16. Change Log
++- 2025-09-18: Initial draft created.
+

@@ -1,0 +1,50 @@
+# Claude Code local configuration
+.claude/
+
+# Build outputs
+*.exe
+*.dll
+*.so
+*.dylib
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.obj
+*.o
+*.a
+
+# IDE and editor files
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Debug and temporary files
+*.log
+*.tmp
+temp/
+tmp/
+debug/
+Debug/
+release/
+Release/
+x64/
+x86/
+bin/
+obj/
